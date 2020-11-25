@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Myjanken" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lJv-BV-of2">
+                                <rect key="frame" x="0.0" y="44" width="414" height="662"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8k6-Si-Y2O">
+                                <rect key="frame" x="0.0" y="762" width="414" height="100"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="1z3-R4-zhF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="じゃんけんをする！">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="shuffleAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="T9o-Nq-7Rx"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="これからじゃんけんをします！" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uCc-li-9Yz">
+                                <rect key="frame" x="0.0" y="714" width="414" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="8YT-AJ-ZBf"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="40" id="PPu-Ot-Lz6"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="aeF-Ei-1eg"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="40" id="es4-rB-jf4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.3529411764705882" green="0.94901960784313721" blue="0.77647058823529413" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="lJv-BV-of2" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="38e-dd-Lb3"/>
+                            <constraint firstItem="uCc-li-9Yz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="3RK-I9-EmY"/>
+                            <constraint firstItem="8k6-Si-Y2O" firstAttribute="top" secondItem="uCc-li-9Yz" secondAttribute="bottom" constant="8" symbolic="YES" id="Afg-7O-e2l"/>
+                            <constraint firstItem="8k6-Si-Y2O" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="B7f-RG-DMC"/>
+                            <constraint firstItem="uCc-li-9Yz" firstAttribute="top" secondItem="lJv-BV-of2" secondAttribute="bottom" constant="8" symbolic="YES" id="BVS-X0-8ws"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uCc-li-9Yz" secondAttribute="trailing" id="ILX-iH-5aX"/>
+                            <constraint firstItem="uCc-li-9Yz" firstAttribute="top" secondItem="lJv-BV-of2" secondAttribute="bottom" constant="8" symbolic="YES" id="Nhs-i3-xPk"/>
+                            <constraint firstItem="8k6-Si-Y2O" firstAttribute="top" secondItem="uCc-li-9Yz" secondAttribute="bottom" constant="106" id="WNZ-OX-f4P"/>
+                            <constraint firstItem="8k6-Si-Y2O" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="WT7-PA-gMF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="8k6-Si-Y2O" secondAttribute="bottom" id="Y8H-W1-cLk"/>
+                            <constraint firstItem="uCc-li-9Yz" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="YWq-fF-0Cf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lJv-BV-of2" secondAttribute="trailing" id="ZVx-yN-C9U"/>
+                            <constraint firstItem="8k6-Si-Y2O" firstAttribute="top" secondItem="uCc-li-9Yz" secondAttribute="bottom" constant="8" symbolic="YES" id="ZXk-Gh-REv"/>
+                            <constraint firstItem="lJv-BV-of2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="c7r-M2-A3g"/>
+                            <constraint firstItem="uCc-li-9Yz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="dcM-a4-bvD"/>
+                            <constraint firstItem="8k6-Si-Y2O" firstAttribute="top" secondItem="uCc-li-9Yz" secondAttribute="bottom" constant="106" id="eQQ-Cq-h8m"/>
+                            <constraint firstItem="8k6-Si-Y2O" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="iQt-nV-GRs"/>
+                            <constraint firstItem="lJv-BV-of2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="kQw-I3-Cgr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8k6-Si-Y2O" secondAttribute="trailing" id="odZ-Ci-xPd"/>
+                            <constraint firstItem="lJv-BV-of2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="su1-wJ-d8c"/>
+                            <constraint firstItem="lJv-BV-of2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="tj5-x1-CGb"/>
+                            <constraint firstItem="uCc-li-9Yz" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="tzR-6T-Bis"/>
+                            <constraint firstItem="8k6-Si-Y2O" firstAttribute="top" secondItem="uCc-li-9Yz" secondAttribute="bottom" constant="8" symbolic="YES" id="x7Q-If-TuG"/>
+                            <constraint firstItem="8k6-Si-Y2O" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="yiZ-fI-yEz"/>
+                            <constraint firstItem="uCc-li-9Yz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="zav-BQ-nbF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="answerImageView" destination="lJv-BV-of2" id="tyN-0e-E1o"/>
+                        <outlet property="answerLabel" destination="uCc-li-9Yz" id="kH5-uw-HKC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-57.971014492753625" y="116.51785714285714"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
